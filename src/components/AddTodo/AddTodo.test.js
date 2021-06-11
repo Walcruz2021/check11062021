@@ -8,7 +8,7 @@ import AddTodoDefault, { AddTodo } from './AddTodo.js';
 
 configure({adapter: new Adapter()});
 
-describe('<AddTodo />',() => {
+xdescribe('<AddTodo />',() => {
 
   describe('Estructura', () => {
     let wrapper;
@@ -60,7 +60,7 @@ describe('<AddTodo />',() => {
     })
   })
 
-  describe('Manejo de inputs con estado', () => {
+  xdescribe('Manejo de inputs con estado', () => {
     let wrapper, useState, useStateSpy;
     beforeEach(() => {
         useState = jest.fn();
@@ -102,7 +102,7 @@ describe('<AddTodo />',() => {
   });
 
 
-  describe('Dispatch to store', () => {
+  x('Dispatch to store', () => {
     var wrapper;
     var store;
     beforeEach(() => {

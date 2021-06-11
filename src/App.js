@@ -13,12 +13,12 @@ import TodoDetail from './components/TodoDetail/TodoDetail';
 import Nav from './components/Nav/Nav';
 // En este componente deberias cargar tus rutas.
 
-function App(props) {
+function App() {
   return (
     
       <>
       <Nav/>
-      <Route path="/" exact component={Home}/>
+      <Route path="/" exact component={Home} />
       <Route path="/add" exact component={AddTodo} />
       
   </>

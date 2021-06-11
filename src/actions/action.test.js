@@ -1,6 +1,6 @@
 import { addTodo, removeTodo, toInProgress, toDone } from './index.js';
 
-describe('Action Creators', () => {
+xdescribe('Action Creators', () => {
   it('Debería retornar una action con las propiedades type "AddTodo" y payload: Este contiene lo que recibe como argumento la funcion ademas del status "Todo" y un id que comienza con el valor 1', () => {
     const payload = { title: 'ejercicio' };
     expect(addTodo(payload)).toEqual({

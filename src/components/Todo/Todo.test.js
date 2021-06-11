@@ -6,7 +6,7 @@ import Todo from './Todo';
 
 configure({adapter: new Adapter()});
 
-describe('<Todo />', () => {
+xdescribe('<Todo />', () => {
   let wrapper;
   let title;
   beforeEach(() => {

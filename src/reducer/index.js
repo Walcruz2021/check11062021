@@ -11,7 +11,8 @@ const todos = (state = initialState, action) => {
     case addTodo:
   //title, description, place, date, id y un status;
       return{todos:[...state.todos, action.payload]}
-
+    case removeTodo:
+      return {...state, m: state.m.concat(action.payload)}; 
     default:
             return state;
   }

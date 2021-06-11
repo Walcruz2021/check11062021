@@ -9,12 +9,15 @@ export const toInProgress = "InProgress";
 export const toDone = "Done";
 
 
-export default function addTodo_f(status){
+export default function addTodo_f(title,status){
 // payload =title: 'ejercicio',status: 'Todo',id: 1
     return {
         type: addTodo,
-        id:todoId++,
-        status
+        payload: {
+        title:title,   
+        status:status,
+        id:todoId++
+        }
     }
 }
 
